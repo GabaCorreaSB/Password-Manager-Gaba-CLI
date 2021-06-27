@@ -1,14 +1,20 @@
 from secret import get_secret_key
-from menu import menu, criar, achar, achar_conta
+from menu import menu, criar, achar, achar_conta, barra
 
 secret = get_secret_key()
 
-senha= input('Defina a senha principal para começar a utilizar o Password Manager.')
+barra()
+print('Defina a senha principal para começar a utilizar o Password Manager')
+senha = input(': ')
+barra()
 
 if senha== secret:
+    barra()
     print('Bem vindo ao Password Manager')
 
+
 else:
+    barra()
     print('Você errou a senha, vaza !')
     exit()
 

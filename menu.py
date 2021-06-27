@@ -2,6 +2,7 @@ from create_hash import senha
 import subprocess
 from bd_manager import guardar_senhas, encontrar_usuario, encontrar_senha
 
+
 def menu():
     barra()
     print(('='*13) + 'Bem vindo ao Password Manager' + ('='*13))
@@ -13,8 +14,9 @@ def menu():
     barra()
     return input('Digite a opção que deseja: ')
 
+
 def barra():
-    print('='*30)
+    print(('='*30))
 
 def criar():
     barra()
@@ -31,10 +33,10 @@ def criar():
     print('Sua senha foi criada e copiada para o seu clipboard')
     print('')
     barra()
-    print = ('Por favor entre um e-mail para esse aplicativo ou site')
+    print('Por favor entre um e-mail para esse aplicativo ou site')
     email_usuario = input(': ')
     barra()
-    print('Digite o username que será utilizado nesse app ou site (caso não haja um deixe em branco)')
+    print('Digite o username que será utilizado nesse app ou site (caso não haja um deixe em branco')
     usuario = input(': ')
     barra()
     if usuario == None:
