@@ -8,8 +8,7 @@ print('Defina a senha principal para começar a utilizar o Password Manager')
 senha = input(': ')
 barra()
 
-if senha== secret:
-    barra()
+if senha == secret:
     print('Bem vindo ao Password Manager')
 
 
