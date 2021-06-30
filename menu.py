@@ -6,24 +6,29 @@ from termcolor import colored
 
 def menu():
     barra()
-    print(colored('='*6, 'cyan', attrs=['blink']) + ' Aqui você pode gerar uma senha para os seus sites e apps ' + colored('='*6, 'cyan', attrs=['blink']))
-    print('1. Criar nova senha')
-    print('2. Encontre sites e apps que usam um E-mail')
-    print('3. Encontre a senha de um site ou app')
-    print('Q. Sair')
+    print(cyan('='*11) + ' Aqui você pode gerar uma senha para os sites e apps ' + cyan('='*11))
+    print(cyan('='*11) + '                 1. Criar nova senha                 ' + cyan('='*11))
+    print(cyan('='*11) + '     2. Encontre sites e apps que usam um E-mail     ' + cyan('='*11))
+    print(cyan('='*11) + '        3. Encontre a senha de um site ou app        ' + cyan('='*11))
+    print(cyan('='*11) + '                       Q. Sair                       ' + cyan('='*11))
     barra()
     return input('Digite a opção que deseja: ')
 
-
+def cyan(parametro):
+    cor = colored(parametro, 'cyan', attrs=['bold'])
+    return cor
+    
 def barra():
-    print(colored('='*70, 'cyan', attrs=['bold']))
+    print(cyan('='*75))
 
 def criar():
     barra()
     print('Digite o nome do app ou site que você deseja criar a senha')
+    barra()
     nome_app = input(': ')
     barra()
     print('Digite o texto de exemplo para a senha')
+    barra()
     texto = input(': ')
     barra()
     password = senha(texto, nome_app, 14)

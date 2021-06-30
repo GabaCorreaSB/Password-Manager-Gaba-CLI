@@ -1,5 +1,5 @@
 from secret import get_secret_key
-from menu import menu, criar, achar, achar_conta, barra
+from menu import menu, criar, achar, achar_conta, barra, cyan
 
 secret = get_secret_key()
 
@@ -10,7 +10,7 @@ senha = input(': ')
 barra()
 
 if senha == secret:
-    print('                     Bem vindo ao Password Manager')
+    print(cyan('='*21) + '  Bem vindo ao Password Manager  ' + cyan('='*21))
 
 
 else:
