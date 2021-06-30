@@ -2,12 +2,12 @@ from hashlib import sha256
 import random
 from secret import get_secret_key
 
-SECRET_KEY = get_secret_key()
+SECRT_KEY = get_secret_key()
 
 # função para a criação da senha utilizando metodo de retorno de string em
 # digitos hexadecimal junto com a função get_hexdigest
 def criar_senha(texto, nome_app):
-    salt = get_hexdigest(SECRET_KEY, nome_app)[:20]
+    salt = get_hexdigest(SECRT_KEY, nome_app)[:20]
     hsh = get_hexdigest(salt, texto)
     return ''.join((salt,hsh))
 

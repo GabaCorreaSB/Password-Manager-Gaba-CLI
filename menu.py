@@ -23,7 +23,7 @@ def criar():
     print('Digite o nome do app ou site que você deseja criar a senha')
     nome_app = input(': ')
     barra()
-    print('Digite o texto de exemplo para a senha: ')
+    print('Digite o texto de exemplo para a senha')
     texto = input(': ')
     barra()
     password = senha(texto, nome_app, 14)

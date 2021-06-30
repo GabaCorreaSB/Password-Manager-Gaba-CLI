@@ -4,7 +4,7 @@ from menu import menu, criar, achar, achar_conta, barra
 secret = get_secret_key()
 
 barra()
-print('Defina a senha principal para começar a utilizar o Password Manager')
+print('Digite a senha principal para começar a utilizar o Password Manager')
 senha = input(': ')
 barra()
 
