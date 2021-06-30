@@ -22,7 +22,7 @@ def conectar():
         print(erro)
 
 
-def encontrar_senha(nome_app):
+def encontrar_app(nome_app):
     try:
         conexao = conectar()
         cursor = conexao.cursor()
@@ -36,7 +36,7 @@ def encontrar_senha(nome_app):
     except (Exception, psycopg2.Error) as erro:
         print(erro)
 
-def encontrar_usuario(email_usuario):
+def encontrar_email(email_usuario):
     data = ('Senha: ', 'Email: ', 'usuario: ', 'url: ', 'Nome do App/Site: ')
     try:
         conexao = conectar()
@@ -56,7 +56,9 @@ def encontrar_usuario(email_usuario):
         print('-'*30)
 
     except (Exception, psycopg2.Error) as erro:
-        print(erro)
+        print(erro)    return input('Digite a opção que deseja: ')
+KeyboardInterrupt
+
        
 
 

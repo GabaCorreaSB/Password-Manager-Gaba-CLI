@@ -1,6 +1,6 @@
 from create_hash import senha
 import subprocess
-from bd_manager import guardar_senhas, encontrar_usuario, encontrar_senha
+from bd_manager import guardar_senhas, encontrar_email, encontrar_app
 from termcolor import colored
 
 
@@ -38,9 +38,11 @@ def criar():
     print('')
     barra()
     print('Por favor entre um e-mail para esse aplicativo ou site')
+    barra()
     email_usuario = input(': ')
     barra()
     print('Digite o username que será utilizado nesse app ou site (caso não haja um deixe em branco')
+    barra()
     usuario = input(': ')
     barra()
     if usuario == None:
@@ -55,13 +57,16 @@ def achar():
     print('Digite o nome do app ou site que deseja verificar a senha')
     nome_app = input(': ')
     barra()
-    encontrar_senha(nome_app)
+    encontrar_app(nome_app)
 
 def achar_conta():
     barra()
     print('Por favor entre o e-mail que quer encontrar a senha')
     email_usuario = input()
     barra()
-    encontrar_usuario(email_usuario)
+    encontrar_email(email_usuario)
+
+def achar_usuario():
+
 
 
