@@ -5,11 +5,12 @@ secret = get_secret_key()
 
 barra()
 print('Digite a senha principal para começar a utilizar o Password Manager')
+barra()
 senha = input(': ')
 barra()
 
 if senha == secret:
-    print('Bem vindo ao Password Manager')
+    print('                     Bem vindo ao Password Manager')
 
 
 else:

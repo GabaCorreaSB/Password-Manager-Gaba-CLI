@@ -1,12 +1,12 @@
 from create_hash import senha
 import subprocess
 from bd_manager import guardar_senhas, encontrar_usuario, encontrar_senha
+from termcolor import colored
 
 
 def menu():
     barra()
-    print(('='*13) + 'Bem vindo ao Password Manager' + ('='*13))
-    print(('='*6) + 'Aqui você pode gerar uma senha para os seus sites e apps' + ('='*6))
+    print(colored('='*6, 'cyan') + ' Aqui você pode gerar uma senha para os seus sites e apps ' + colored('='*6, 'cyan'))
     print('1. Criar nova senha')
     print('2. Encontre sites e apps que usam um E-mail')
     print('3. Encontre a senha de um site ou app')
@@ -16,7 +16,7 @@ def menu():
 
 
 def barra():
-    print(('='*30))
+    print(colored('='*70, 'cyan', attrs=['blink']))
 
 def criar():
     barra()
@@ -48,7 +48,7 @@ def criar():
 
 def achar():
     barra()
-    print('Digite a o e-mail que deseja verificar os sites e apps')
+    print('Digite o nome do app ou site que deseja verificar a senha')
     nome_app = input(': ')
     barra()
     encontrar_senha(nome_app)
