@@ -6,7 +6,7 @@ from termcolor import colored
 
 def menu():
     barra()
-    print(colored('='*6, 'cyan') + ' Aqui você pode gerar uma senha para os seus sites e apps ' + colored('='*6, 'cyan'))
+    print(colored('='*6, 'cyan', attrs=['blink']) + ' Aqui você pode gerar uma senha para os seus sites e apps ' + colored('='*6, 'cyan', attrs=['blink']))
     print('1. Criar nova senha')
     print('2. Encontre sites e apps que usam um E-mail')
     print('3. Encontre a senha de um site ou app')
@@ -16,7 +16,7 @@ def menu():
 
 
 def barra():
-    print(colored('='*70, 'cyan', attrs=['blink']))
+    print(colored('='*70, 'cyan', attrs=['bold']))
 
 def criar():
     barra()
@@ -27,7 +27,6 @@ def criar():
     texto = input(': ')
     barra()
     password = senha(texto, nome_app, 14)
-    subprocess.run('xclip', universal_newlines=True, input=password)
     barra()
     print('')
     print('Sua senha foi criada e copiada para o seu clipboard')
