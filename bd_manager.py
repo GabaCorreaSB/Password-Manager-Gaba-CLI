@@ -56,10 +56,7 @@ def encontrar_email(email_usuario):
         print('-'*30)
 
     except (Exception, psycopg2.Error) as erro:
-        print(erro)    return input('Digite a opção que deseja: ')
-KeyboardInterrupt
-
-       
+        print(erro)       
 
 
 

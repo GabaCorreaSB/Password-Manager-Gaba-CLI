@@ -66,7 +66,4 @@ def achar_conta():
     barra()
     encontrar_email(email_usuario)
 
-def achar_usuario():
-
-
 
