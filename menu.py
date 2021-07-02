@@ -30,45 +30,40 @@ def barra():
 
 def criar():
     barra()
-    nome_app = input('Digite o nome do app ou site que você deseja criar a senha: ')
+    nome_app = input('Digite o nome do app ou site que você deseja criar a senha:  ')
     barra()
-    texto = input('Digite o texto de exemplo para a senha: ')
+    texto = input('Digite o texto de exemplo para a senha:  ')
     barra()
     password = senha(texto, nome_app, 14)
     print('')
     print(f'Sua senha foi criada, sua senha é {password}')
     print('')
     barra()
-    email_usuario = input('Por favor entre um e-mail para esse aplicativo ou site:')
+    email_usuario = input('Por favor entre um e-mail para esse aplicativo ou site:  ')
     barra()
-    usuario = input('Digite o username que será utilizado nesse app ou site (caso não haja um deixe em branco')
+    usuario = input('Digite o username que será utilizado nesse app ou site (caso não haja um deixe em branco):  ')
     barra()
     if usuario == None:
         username = ''
-    url = input('Digite a URL do site ou app: ')
+    url = input('Digite a URL do site ou app:  ')
     barra()
     guardar_senhas(password, email_usuario, usuario, url, nome_app)
 
 def achar_app():
     barra()
-    print('Digite o nome do app ou site que deseja verificar a senha')
+    nome_app = input('Digite o nome do app ou site que deseja verificar a senha:  ')
     barra()
-    nome_app = input(': ')
     barra()
     encontrar_app(nome_app)
 
 def achar_email():
     barra()
-    print('Por favor entre o e-mail que quer encontrar a senha')
-    barra()
-    email_usuario = input(': ')
+    email_usuario = input('Por favor entre o e-mail que quer encontrar a senha:  ')
     barra()
     encontrar_email(email_usuario)
 
-def achar_usuario(usuario):
+def achar_usuario():
     barra()
-    print('Por favor entre o usuario que quer encontrar a senha')
-    barra()
-    usuario = input(': ')
+    usuario = input('Por favor entre o usuario que quer encontrar a senha:  ')
     barra()
     encontrar_usuario(usuario)
