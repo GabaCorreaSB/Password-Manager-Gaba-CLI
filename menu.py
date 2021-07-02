@@ -66,4 +66,4 @@ def achar_usuario(usuario):
     barra()
     usuario = input(': ')
     barra()
-    encontrar_email(usuario)
+    encontrar_usuario(usuario)
