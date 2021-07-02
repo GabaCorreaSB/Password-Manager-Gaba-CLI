@@ -1,5 +1,5 @@
 from secret import get_secret_key
-from menu import menu, criar, achar, achar_conta, barra, cyan
+from menu import menu, criar, achar_usuario, achar_email, achar_app, barra, cyan
 import getpass
 secret = get_secret_key()
 
@@ -14,7 +14,7 @@ print('')
 
 if senha == secret:
     barra()
-    print(cyan('='*21) + '  Bem vindo ao Password Manager  ' + cyan('='*21))
+    print(cyan('='*30) + '  Bem vindo ao Password Manager  ' + cyan('='*31))
 
 
 else:
@@ -24,13 +24,15 @@ else:
 
 escolha = menu()
 
-while escolha != 'Q':
+while escolha != 'Q':  
     if escolha == '1':
         criar()
     if escolha == '2':
-        achar_conta()
+        achar_email()
     if escolha == '3':
-        achar()
+        achar_app()
+    if escolha == '4':
+        achar_usuario()
     else:
         escolha = menu()
 

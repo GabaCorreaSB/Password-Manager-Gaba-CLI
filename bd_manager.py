@@ -58,5 +58,24 @@ def encontrar_email(email_usuario):
     except (Exception, psycopg2.Error) as erro:
         print(erro)       
 
+def encontrar_usuario(usuario):
+    data = ('Senha: ', 'Email: ', 'usuario: ', 'url: ', 'Nome do App/Site: ')
+    try:
+        conexao = conectar()
+        cursor = conexao.cursor()
+        postgres_select_query = """ SELECT * FROM contas WHERE usuario = '""" + usuario + "'"
+        cursor.execute(postgres_select_query, usuario)
+        conexao.commit()
+        resultado = cursor.fetchall()
+        print('')
+        print('RESULTADO')
+        print('')
 
-
+        for fileira in resultado:
+            for i in range(0, len(fileira) - 1):
+                print(data[i] + fileira[i])
+        print('')
+        print('-'*30)
+    
+    except (Exception, psycopg2.Error) as erro:
+        print(erro)
