@@ -7,6 +7,13 @@ body:
     attributes:
       value: "Utilize o formulário abaixo para realizar a abertura do Problem Report"
   - type: input
+    id: data
+    attributes:
+      label: "Data de Abertura"
+      description: "Data de abertura do PR"
+    validations:
+      required: true
+  - type: input
     id: contato
     attributes:
       label: "Informação de Contato"
@@ -64,3 +71,5 @@ body:
         - Alta prioridade
         - Média prioridade
         - Baixa prioridade
+    validations:
+      required: true
