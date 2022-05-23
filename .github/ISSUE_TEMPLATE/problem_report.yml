@@ -34,7 +34,7 @@ body:
     id: version
     attributes:
       label: Versão 
-      description: "Qual versão do OctaX ocorreu o erro?"
+      description: "Caso o problema for na plataforma OctaX favor informar a versão"
       options:
         - OctaX V4.3 
         - OctaX V4.299
@@ -42,7 +42,7 @@ body:
     id: version_robotfx
     attributes:
       label: Versão Robotfx
-      description: "Versão do RobotFX da qual o erro ocorreu"
+      description: "Caso o problema for na plataforma RobotFX favor informar a versão"
   - type: dropdown
     id: ambiente
     attributes:
