@@ -7,13 +7,6 @@ body:
     attributes:
       value: "Utilize o formulário abaixo para realizar a abertura do Problem Report"
   - type: input
-    id: data
-    attributes:
-      label: "Data de Abertura"
-      description: "Data de abertura do PR"
-    validations:
-      required: true
-  - type: input
     id: contato
     attributes:
       label: "Informação de Contato"
@@ -21,6 +14,13 @@ body:
       placeholder: "ex. email@example.com"
     validations:
       required: false
+  - type: input
+    id: data
+    attributes:
+      label: "Data de Abertura"
+      description: "Data de abertura do PR"
+    validations:
+      required: true
   - type: textarea
     id: description
     attributes:
@@ -51,6 +51,8 @@ body:
         - Homologação
         - Desenvolvimento
         - Produção
+    validations:
+      required: true
   - type: dropdown
     id: severity
     attributes:
