@@ -29,10 +29,10 @@ body:
       label: Versão
       description: "Qual versão da plataforma o erro ocorreu?"
       options:
-        - OctaX V4.3 
-        - OctaX V4.299
-        - RobotFX V0.17.296
-        - RobotFX V0.20.8 
+        - OctaX V4-3 
+        - OctaX V4-299
+        - RobotFX V0-17-296
+        - RobotFX V0-20-8 
     validations:
       required: true
   - type: dropdown
