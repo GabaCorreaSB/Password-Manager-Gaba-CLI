@@ -12,12 +12,6 @@ body:
       placeholder: "ex. email@example.com"
     validations:
       required: false
-  - type: input
-    id: data
-    attributes:
-      label: "Data de Abertura"
-    validations:
-      required: true
   - type: textarea
     id: description
     attributes:
