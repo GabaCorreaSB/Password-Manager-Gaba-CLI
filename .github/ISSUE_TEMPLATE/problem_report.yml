@@ -50,7 +50,7 @@ body:
     id: severity
     attributes:
       label: Severidade
-      description: >
+      description: |
       "Critico - Impede o uso da plataforma"
       "Não-Crítico - Não impede o uso da plataforma"
       options:
