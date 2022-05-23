@@ -4,7 +4,7 @@ title: "[PR]: "
 body:
   - type: markdown
     attributes:
-      value: "Utilize o formulário abaixo para realizar a abertura do Problem Report"
+      value: "Utilize o formulário abaixo para realizar a abertura de um Problem Report"
   - type: input
     id: contato
     attributes:
