@@ -24,7 +24,9 @@ body:
     attributes:
       label: Produto
       options:
-        - RobotFX 
+        - RobotFX
+    validations:
+      required: true
   - type: input
     id: version_robotfx
     attributes:
