@@ -38,16 +38,11 @@ body:
       options:
         - OctaX V4.3 
         - OctaX V4.299
-        - Erro em outra plataforma
-    validations:
-      required: true
   - type: input
     id: version_robotfx
     attributes:
       label: Versão Robotfx
       description: "Versão do RobotFX da qual o erro ocorreu"
-    validations:
-      required: true
   - type: dropdown
     id: ambiente
     attributes:
