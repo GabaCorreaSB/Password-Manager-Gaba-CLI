@@ -33,13 +33,19 @@ body:
   - type: dropdown
     id: version
     attributes:
-      label: Versão
-      description: "Qual versão da plataforma o erro ocorreu?"
+      label: Versão 
+      description: "Qual versão da plataforma o erro ocorreu? (Caso robotfx escolher a opção robotfx e informar a versão abaixo
       options:
         - OctaX V4.3 
         - OctaX V4.299
-        - RobotFX V0.17.296
-        - RobotFX V0.20.8 
+        - RobotFX
+    validations:
+      required: true
+  - type: input
+    id: version_robotfx
+    attributes:
+      label: Versão Robotfx
+      description: "Versão do RobotFX da qual o erro ocorreu"
     validations:
       required: true
   - type: dropdown
@@ -48,8 +54,6 @@ body:
       label: Qual ambiente o problema foi encontrado?
       multiple: true
       options:
-        - Homologação
-        - Desenvolvimento
         - Produção
     validations:
       required: true
@@ -70,8 +74,8 @@ body:
       description: "Qual a prioridade do problema?"
       multiple: true
       options:
-        - Alta prioridade
-        - Média prioridade
-        - Baixa prioridade
+        - Alta
+        - Média
+        - Baixa
     validations:
       required: true
