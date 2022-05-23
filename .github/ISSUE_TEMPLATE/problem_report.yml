@@ -1,7 +1,6 @@
 name: "Problem Report"
 description: "File a problem report"
 title: "[PR]: "
-labels: ["bug"]
 body:
   - type: markdown
     attributes:
@@ -9,8 +8,7 @@ body:
   - type: input
     id: contato
     attributes:
-      label: "Informação de Contato"
-      description: "Como podemos entrar em contato com você para falarmos do PR?"
+      label: "Informação de contato"
       placeholder: "ex. email@example.com"
     validations:
       required: false
@@ -18,31 +16,27 @@ body:
     id: data
     attributes:
       label: "Data de Abertura"
-      description: "Data de abertura do PR"
     validations:
       required: true
   - type: textarea
     id: description
     attributes:
-      label: Qual foi o problema encontrado?
-      description: "Quando o problema foi encontrado, o que esperava além do problema?"
-      placeholder: "Mostre o que aconteceu! (Screenshots)"
-      value: "A bug happened!"
+      label: Descrição
+      placeholder: "Descrição do problema"
     validations:
       required: true
   - type: dropdown
     id: version
     attributes:
-      label: Versão 
-      description: "Caso o problema for na plataforma OctaX favor informar a versão"
+      label: Produto
       options:
-        - OctaX V4.3 
-        - OctaX V4.299
+        - RobotFX 
   - type: input
     id: version_robotfx
     attributes:
-      label: Versão Robotfx
-      description: "Caso o problema for na plataforma RobotFX favor informar a versão"
+      label: Número da versão
+    validations:
+      required: true
   - type: dropdown
     id: ambiente
     attributes:
@@ -56,17 +50,16 @@ body:
     id: severity
     attributes:
       label: Severidade
-      description: "Qual a severidade do problema?"
+      description: "Critico - Impede o uso da plataforma, Não-Crítico - Não impede o uso da plataforma"
       options:
-        - Crítica
-        - Não-Crítica
+        - Crítico 
+        - Não-Crítico
     validations:
       required: true
   - type: dropdown
     id: priority
     attributes:
       label: Prioridade
-      description: "Qual a prioridade do problema?"
       multiple: true
       options:
         - Alta
