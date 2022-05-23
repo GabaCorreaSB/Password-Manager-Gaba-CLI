@@ -34,11 +34,11 @@ body:
     id: version
     attributes:
       label: Versão 
-      description: "Qual versão da plataforma o erro ocorreu? (Caso robotfx escolher a opção robotfx e informar a versão abaixo
+      description: "Qual versão do OctaX ocorreu o erro?"
       options:
         - OctaX V4.3 
         - OctaX V4.299
-        - RobotFX
+        - Erro em outra plataforma
     validations:
       required: true
   - type: input
