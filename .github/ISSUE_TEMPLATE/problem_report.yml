@@ -1,26 +1,25 @@
-name: Problem Report
-description: File a problem report
+name: "Problem Report"
+description: "File a problem report"
 title: "[PR]: "
 labels: ["bug"]
 body:
   - type: markdown
     attributes:
-      value: |
-        Utilize o formulário abaixo para realizar a abertura do Problem Report
+      value: "Utilize o formulário abaixo para realizar a abertura do Problem Report"
   - type: input
     id: contato
     attributes:
-      label: Informação de Contato
-      description: Como podemos entrar em contato com você para falarmos do PR?
-      placeholder: ex. email@example.com
+      label: "Informação de Contato"
+      description: "Como podemos entrar em contato com você para falarmos do PR?"
+      placeholder: "ex. email@example.com"
     validations:
       required: false
   - type: textarea
     id: Descrição
     attributes:
       label: Qual foi o problema encontrado?
-      description: Quando o problema foi encontrado, o que esperava além do problema?
-      placeholder: Mostre o que aconteceu! (Screenshots)
+      description: "Quando o problema foi encontrado, o que esperava além do problema?"
+      placeholder: "Mostre o que aconteceu! (Screenshots)"
       value: "A bug happened!"
     validations:
       required: true
@@ -28,7 +27,7 @@ body:
     id: version
     attributes:
       label: Versão
-      description: Qual versão da plataforma o erro ocorreu?
+      description: "Qual versão da plataforma o erro ocorreu?"
       options:
         - OctaX V4.3 
         - OctaX V4.299
@@ -49,7 +48,7 @@ body:
     id: severity
     attributes:
       label: Severidade
-      description: Qual a severidade do problema? 
+      description: "Qual a severidade do problema?"
       options:
         - Crítica
         - Não-Crítica
@@ -59,7 +58,7 @@ body:
     id: priority
     attributes:
       label: Prioridade
-      description: Qual a prioridade do problema?
+      description: "Qual a prioridade do problema?"
       multiple: true
       options:
         - Alta prioridade
