@@ -1,4 +1,4 @@
-name: "Problem Report"
+name: "Problem Report "
 description: "File a problem report"
 title: "[PR]: "
 body:
@@ -36,7 +36,7 @@ body:
   - type: dropdown
     id: ambiente
     attributes:
-      label: Qual ambiente o problema foi encontrado?
+      label: Ambiente?
       multiple: true
       options:
         - Produção
